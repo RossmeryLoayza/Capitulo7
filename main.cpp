@@ -9,6 +9,20 @@ int fun(int *k)
     return 3 * (*k) - 1;
 }
 
+int x = 0;
+
+int f1()
+{
+  x = 5;
+  return x;
+}
+
+int f2()
+{
+  x = 10;
+  return x;
+}
+
 int main()
 {
     /** Ejercicio 1 **/
@@ -28,6 +42,30 @@ int main()
     cout << (d&&e||1) << endl;
     cout << (d&&(e||1)) << endl;
     cout << ((d&&e)||1) << endl;*/
+    
+    /**Ejercicio 5**/
+    /*
+    int p = f1() + f2();
+    printf("%d ", x);
+    getchar();
+    */
+
+    /**Ejercicio 7**/
+    /*int i = 1;
+    cout << i << ++i << i++;
+    
+    int a[] = {1, 2, 3};
+    int *pa; 
+
+    pa = &a[0];
+    printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa), *(pa++),*(++pa)); // 3 2 2
+
+    pa = &a[0];
+    printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa++),*(pa),*(++pa)); // 2 2 2
+   
+   pa = &a[0];
+   printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa++),*(++pa), *(pa)); // 2 2 1
+    */
 
     /** Ejercicio 9 **/
     time_t inicio, fin;
@@ -41,5 +79,7 @@ int main()
     float e = 3.1416;
     float f = d+e*d/4-2+d*e;
     fin = time(NULL);
+    
+    
     return 0;
 }
