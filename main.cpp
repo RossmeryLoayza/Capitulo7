@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <time.h>
+#include <math.h>
 
 using namespace std;
 
@@ -43,43 +44,42 @@ int main()
     cout << (d&&e||1) << endl;
     cout << (d&&(e||1)) << endl;
     cout << ((d&&e)||1) << endl;*/
-    
+
     /**Ejercicio 5**/
-    /*
-    int p = f1() + f2();
-    printf("%d ", x);
-    */
+
+    /*int p = f2() + f1();
+    printf("%d ", x);*/
 
     /**Ejercicio 7**/
     /*int i = 1;
-    cout << i << ++i << i++;
-    
-    int a[] = {1, 2, 3};
-    int *pa; 
+    cout << i << " " << ++i << " " << i++ << endl;
 
+    int a[] = {1, 2, 3};
+    int *pa;
     pa = &a[0];
     printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa), *(pa++),*(++pa)); // 3 2 2
-
     pa = &a[0];
     printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa++),*(pa),*(++pa)); // 2 2 2
-   
     pa = &a[0];
-    printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa++),*(++pa), *(pa)); // 2 2 1
-    */
+    printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa++),*(++pa), *(pa)); // 2 2 1*/
+
 
     /** Ejercicio 9 **/
-    time_t inicio, fin;
-    inicio = time(NULL);
+    float inicio, fin;
+    /*inicio = clock();
     int a = 10;
     int b = 32;
     int c = a+b*a/4-2+a*b;
-    fin = time(NULL);
-    inicio = time(NULL);
+    int res = pow(c,a)+a*b+c/a-b*c+a/b-c;
+    fin = clock();*/
+
+    inicio = clock();
     float d = 1.256;
     float e = 3.1416;
     float f = d+e*d/4-2+d*e;
-    fin = time(NULL);
-    
-    
+    float res2 = d*e+f/d-e*f+d/e-f;
+    fin = clock();
+    cout << "total : " << fin - inicio << endl;
+
     return 0;
 }
