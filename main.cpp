@@ -48,7 +48,6 @@ int main()
     /*
     int p = f1() + f2();
     printf("%d ", x);
-    getchar();
     */
 
     /**Ejercicio 7**/
@@ -64,8 +63,8 @@ int main()
     pa = &a[0];
     printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa++),*(pa),*(++pa)); // 2 2 2
    
-   pa = &a[0];
-   printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa++),*(++pa), *(pa)); // 2 2 1
+    pa = &a[0];
+    printf("a[0] = %d\ta[1] = %d\ta[2] = %d\n",*(pa++),*(++pa), *(pa)); // 2 2 1
     */
 
     /** Ejercicio 9 **/
